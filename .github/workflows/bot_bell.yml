@@ -24,6 +24,11 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get install ffmpeg
 
+      - name: Download bell sound
+        run: |
+          curl -L -o park-church-bell-tolling-01.wav https://github.com/truongthanh2002/bell_BotDiscord/raw/main/park-church-bell-tolling-01.wav
+
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
