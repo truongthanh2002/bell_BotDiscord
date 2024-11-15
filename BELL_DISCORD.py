@@ -14,6 +14,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # Token and sound file
 
 TOKEN = os.getenv('DISCORD_TOKEN')
+print(f"Bot token is: {DISCORD_TOKEN}")
 BELL_SOUND = "D:/MINI/BOT DISCORD/park-church-bell-tolling-01.wav"
 
 # List of channel IDs
