@@ -3,7 +3,6 @@ from discord.ext import commands
 import asyncio
 from datetime import datetime
 import os
-from dotenv import load_dotenv
 
 # Initialize bot
 intents = discord.Intents.default()
@@ -12,9 +11,6 @@ intents.members = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Token and sound file
-
-load_dotenv()
-
 TOKEN = os.getenv('DISCORD_TOKEN')
 if not DISCORD_TOKEN:
     print("Error: DISCORD_TOKEN is not set.")
