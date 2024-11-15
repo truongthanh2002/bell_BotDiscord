@@ -1,0 +1,31 @@
+name: Run Discord Bot
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *'  # Chạy bot mỗi ngày lúc 00:00 (UTC)
+  workflow_dispatch:  # Cho phép chạy thủ công từ giao diện web
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest  # Chạy trên môi trường Ubuntu
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'  # Chọn phiên bản Python bạn sử dụng
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Cài đặt các thư viện
+
+      - name: Run bot
+        run: |
+          python BELL_DISCORD.py  # Chạy bot Discord của bạn
