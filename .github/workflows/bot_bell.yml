@@ -28,4 +28,5 @@ jobs:
 
       - name: Run bot
         run: |
-          python BELL_DISCORD.py  # Chạy bot Discord của bạn
+          python /home/runner/work/tên_project/thư_mục_chứa/BELL_DISCORD.py
+  # Chạy bot Discord của bạn
