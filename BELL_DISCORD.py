@@ -16,7 +16,7 @@ if not TOKEN:
     print("Error: DISCORD_TOKEN is not set.")
 else:
     print(f"Bot token is valid.")
-BELL_SOUND = "D:/MINI/BOT DISCORD/park-church-bell-tolling-01.wav"
+BELL_SOUND = "https://github.com/truongthanh2002/bell_BotDiscord/raw/main/park-church-bell-tolling-01.wav"
 
 # List of channel IDs
 CHANNEL_IDS = [1270285785534300251, 861245642441490472, 897061629215264789, 903685923101900800, 897074575198785557]
