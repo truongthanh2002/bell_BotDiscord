@@ -16,6 +16,10 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 load_dotenv()
 
 TOKEN = os.getenv('DISCORD_TOKEN')
+if not DISCORD_TOKEN:
+    print("Error: DISCORD_TOKEN is not set.")
+else:
+    print(f"Bot token is valid.")
 BELL_SOUND = "D:/MINI/BOT DISCORD/park-church-bell-tolling-01.wav"
 
 # List of channel IDs
