@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 import asyncio
 from datetime import datetime
-import os
-from dotenv import load_dotenv
 
 # Initialize bot
 intents = discord.Intents.default()
@@ -12,7 +10,7 @@ intents.members = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Token and sound file
-load_dotenv()
+
 TOKEN = os.getenv('DISCORD_TOKEN')
 BELL_SOUND = "D:/MINI/BOT DISCORD/park-church-bell-tolling-01.wav"
 
