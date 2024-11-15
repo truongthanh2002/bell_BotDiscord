@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Token and sound file
 TOKEN = os.getenv('DISCORD_TOKEN')
-if not DISCORD_TOKEN:
+if not TOKEN:
     print("Error: DISCORD_TOKEN is not set.")
 else:
     print(f"Bot token is valid.")
