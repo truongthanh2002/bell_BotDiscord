@@ -28,6 +28,6 @@ jobs:
 
       - name: Run bot
         env:
-          TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
         run: python BELL_DISCORD.py
   # Chạy bot Discord của bạn
